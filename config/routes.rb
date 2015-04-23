@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  get '/signup', :to => "users#new"
 
-  root :to => 'pages#home'
+
   get '/about', :to => 'pages#about'
   get '/contact', :to => 'pages#contact'
   get '/help', :to => 'pages#help'
 
+  root :to => 'pages#home'
 
 
 
